@@ -61,7 +61,6 @@ ipython_config.py
 .python-version
 
 # Virtual environments
-.env
 .venv
 env/
 venv/
@@ -82,7 +81,6 @@ site/.venv/
 **/env/
 
 # IDEs
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -408,3 +406,4 @@ book/tools/audit/fmt/*_adjudication_queue.txt
 /scripts/surgical_fix_ml_systems.py
 /scripts/test_ml_systems_values.py
 /scripts/unblock_build.py
+config.bat

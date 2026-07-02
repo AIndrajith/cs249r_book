@@ -5,7 +5,7 @@
   "description": "Cloudflare Worker that powers StaffML's Ask Interviewer panel. Adapter pattern over Cloudflare Workers AI / Groq / OpenAI / Anthropic / Gemini / OpenRouter, KV-backed rate limiter, server-side Socratic system prompt enforcement.",
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "dev": "node init && wrangler dev",
     "tail": "wrangler tail",
     "types": "wrangler types"
   },
