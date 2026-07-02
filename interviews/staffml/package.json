@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "predev": "node scripts/sync-design-grammar.mjs && node scripts/build-local-corpus.mjs",
-    "dev": "next dev",
+    "dev": "node init && next dev",
     "prebuild": "node scripts/sync-design-grammar.mjs",
-    "build": "next build",
-    "start": "next start",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
     "sync:design-grammar": "node scripts/sync-design-grammar.mjs",
-    "build:local-corpus": "node scripts/build-local-corpus.mjs"
+    "build:local-corpus": "node init && node scripts/build-local-corpus.mjs"
   },
   "dependencies": {
     "@react-sigma/core": "^5.0.6",
